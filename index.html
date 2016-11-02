@@ -1,32 +1,140 @@
 <!DOCTYPE html>
-<html lang="nl">
-	<head>
-		<meta charset="UTF-8">
-		<title>Wie ben ik?</title>
-		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	</head>
-	<body>
-		<div class="ContainerTop">
-			<div class="Logo"></div>
-			<div class="Navigation">
-				<a href="index.html" class="Navigation">Home</a>
-				<a href="doelen.html" class="Navigation">Doelen</a>
-				<a href="kennisVaardigheden.html" class="Navigation">Kennis/Vaardigheden</a>
-				<a href="studies.html" class="Navigation">Studies</a>
-				<a href="werkervaring.html" class="Navigation">Werkervaring</a>
-			</div>
-		</div>
-		<div class="ContainerMidden">
-			<div class="Content">
-				<h1 class="Title">Wie ben ik?</h1>
-				<p>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		jQuery(document).ready(function(){
 
-					Ik ben Tim van den Enden en ben 16 jaar oud. Ik woon in Arkel. <br /> 
-					Mijn hobbies zijn Gamen en Progameren. 
-				
-				</p>
+			jQuery('.NavMobile').on('click', function(){
+
+				jQuery(this).toggleClass('active');
+				jQuery('.NavPc').toggleClass('active');
+			});
+		});
+	</script>
+	<title>T1mINC | 2016</title>
+</head>
+<body>
+
+<header>
+	<div class="HeaderContainer">
+		<div class="HeaderLeft"><img class="LogoHeader" src="assets/images/T1mINCHeader.png" alt="LogoHeader"></div>
+		<nav>
+			<div class="NavPc">
+				<a class="nav" href="index.html">Home</a> |
+				<a class="nav" href="overmij.html">Over Mij</a> |
+				<a class="nav" href="opleiding.html">Opleiding</a>
 			</div>
-			<div class="Picture"></div>
+			<div class="NavMobile">
+				<span class="Hamburger"></span>
+				<span class="Hamburger2"></span>
+			</div>
+		</nav>
+	</div>
+</header>
+<main>
+	<section class="articles">
+		<div class="row">
+			<article class="index">
+				<div class="ImagesHolder">
+					<img class="Ik" src="assets/images/tim.jpeg" alt="Ik">
+				</div>
+				<h2 class="title">Over Mij</h2>
+				<div class="Holder">
+					<a href="overmij.html" class="Info">Klik hier om meer te lezen!</a>
+				</div>
+			</article>
+			<hr />
+			<article class="index">
+				<div class="ImagesHolder">
+					<img class="OpleidingImage" src="assets/images/opleiding.jpg" alt="OpleidingImage">
+				</div>
+				<h2 class="title">Mijn Opleiding</h2>
+				<div class="Holder">
+					<a href="opleiding.html" class="Info">Klik hier om meer te lezen!</a>
+				</div>
+			</article>
 		</div>
-	</body>
+	</section>
+</main>
+<div class="OpdrachtenPCshow">
+	<div id="Title">
+		Mijn Opdrachten!
+	</div>
+	<div class="articles">
+		<section id="Opdrachten">
+			<div class="row2">
+				<article class="index2">
+					<div class="OpdrachtHolder">
+						<img class="opdracht" src="assets/images/opdrachten/wiebenik.png" alt="opdracht">
+					</div>
+					<div class="hoverThingy">
+						<h1 class="hoverThingy">Opdracht: Wie ben ik? (1.0)</h1>
+						<img class="CodeIcon" src="assets/images/CodeIcon.png"OpleidingImage"><br>
+						<a class="GitHub" href="https://github.com/TimVanDenEnden/WieBenIk-">Scoure Code posted on GitHub</a>
+					</div>
+				</article>
+				<article class="index2">
+					<div class="OpdrachtHolder">
+						<img class="opdracht" src="assets/images/opdrachten/vloot.png" alt="opdracht">
+					</div>
+					<div class="hoverThingy">
+						<h1 class="hoverThingy">Opdracht: De vloot</h1>
+						<img class="CodeIcon" src="assets/images/CodeIcon.png"OpleidingImage"><br>
+						<a class="GitHub" href="https://github.com/TimVanDenEnden/Vloot">Scoure Code posted on GitHub</a>
+					</div>	
+				</article>
+				<article class="index2">
+					<div class="OpdrachtHolder">
+						<img class="opdracht" src="assets/images/opdrachten/layout.png" alt="opdracht">
+					</div>
+					<div class="hoverThingy">
+						<h1 class="hoverThingy">Opdracht: Layout</h1>
+						<img class="CodeIcon" src="assets/images/CodeIcon.png"OpleidingImage"><br>
+						<a class="GitHub" href="https://github.com/TimVanDenEnden/Layout">Scoure Code posted on GitHub</a>
+					</div>
+				</article>
+				<article class="index2">
+					<div class="OpdrachtHolder">
+						<img class="opdracht" src="assets/images/opdrachten/recepten.png" alt="opdracht">
+					</div>
+					<div class="hoverThingy">
+						<h1 class="hoverThingy">Opdracht: Recepten</h1>
+						<img class="CodeIcon" src="assets/images/CodeIcon.png"OpleidingImage"><br>
+						<a class="GitHub" href="https://github.com/TimVanDenEnden/recepten">Scoure Code posted on GitHub</a>
+					</div>
+				</article>
+				<article class="index2">
+					<div class="OpdrachtHolder">
+						<img class="opdracht" src="assets/images/opdrachten/grid.png" alt="opdracht">
+					</div>
+					<div class="hoverThingy">
+						<h1 class="hoverThingy">Opdracht: Grid</h1>
+						<img class="CodeIcon" src="assets/images/CodeIcon.png"OpleidingImage"><br>
+						<a class="GitHub" href="https://github.com/TimVanDenEnden/grid">Scoure Code posted on GitHub</a>
+					</div>
+				</article>
+				<article class="index2">
+					<div class="OpdrachtHolder">
+						<img class="opdracht" src="assets/images/opdrachten/handy.png" alt="opdracht">
+					</div>
+					<div class="hoverThingy">
+						<h1 class="hoverThingy">Opdracht: Handy</h1>
+						<img class="CodeIcon" src="assets/images/CodeIcon.png"OpleidingImage"><br>
+						<a class="GitHub" href="https://github.com/TimVanDenEnden/handy">Scoure Code posted on GitHub</a>
+					</div>
+				</article>
+			</div>
+	</section>	
+</div>
+</div>
+<footer>
+	CopyRight by T1mINC  2016
+</footer>
+
+</body>
 </html>
