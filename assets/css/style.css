@@ -39,7 +39,7 @@ div.HeaderLeft {
 }
 
 nav {
-    width: 30%;
+    width: 50%;
     float: right;
     text-align: center;
     padding-top: 25px;
@@ -226,6 +226,22 @@ div.row3 {
     justify-content: space-between;
 }
 
+div#ContainerInfoProgrammeur {
+    width: 100%;
+    background: #fff;
+    display: none;
+    color: grey;
+
+}
+
+div#ContainerInfoToekomst {
+    width: 100%;
+    background: #fff;
+    display: none;
+    color: grey;
+
+}
+
 div#ContainerInfoBeheer {
     width: 100%;
     background: #fff;
@@ -393,10 +409,20 @@ img.CodeIcon {
         width: 100%;
     }
 
+    section.articles {
+        width: 80%;
+    }
+
     span.left {
         width: 100%;
     }
 
+}
+
+@media (max-width: 900px) {
+    nav {
+        width: 60%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -510,6 +536,7 @@ img.CodeIcon {
         color: #fff;
 
     }  
+
 
 }  
 

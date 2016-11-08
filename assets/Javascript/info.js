@@ -7,13 +7,7 @@ function ShowTalenReken() {
 	/* show */
 	document.getElementById('ContainerInfoTalenRekenen').style.display = 'block';
 
-	/* footer */
-	document.getElementById('Footer').style.background = '#fff';
-	document.getElementById('Footer').style.color = 'grey';
-
-	/* opdrachten VAK title */
-	document.getElementById('Title').style.background = '#232937';
-	document.getElementById('Title').style.color = '#fff';
+	ChangeFooter();
 }
 
 function ShowProgrameren() {
@@ -25,13 +19,7 @@ function ShowProgrameren() {
 	/* show */
 	document.getElementById('ContainerInfoProgrameren').style.display = 'block';
 
-	/* footer */
-	document.getElementById('Footer').style.background = '#fff';
-	document.getElementById('Footer').style.color = 'grey';
-
-	/* opdrachten VAK title */
-	document.getElementById('Title').style.background = '#232937';
-	document.getElementById('Title').style.color = '#fff';
+	ChangeFooter();
 }
 
 function ShowTalenBeheer() {
@@ -43,13 +31,7 @@ function ShowTalenBeheer() {
 	/* show */
 	document.getElementById('ContainerInfoBeheer').style.display = 'block';
 
-	/* footer */
-	document.getElementById('Footer').style.background = '#fff';
-	document.getElementById('Footer').style.color = 'grey';
-
-	/* opdrachten VAK title */
-	document.getElementById('Title').style.background = '#232937';
-	document.getElementById('Title').style.color = '#fff';
+	ChangeFooter();
 }
 
 function ShowMoreAboutMe() {
@@ -60,13 +42,7 @@ function ShowMoreAboutMe() {
 	/* show */
 	document.getElementById('ShowMoreAboutMe').style.display = 'block';
 
-	/* footer */
-	document.getElementById('Footer').style.background = '#fff';
-	document.getElementById('Footer').style.color = 'grey';
-
-	/* opdrachten VAK title */
-	document.getElementById('Title').style.background = '#232937';
-	document.getElementById('Title').style.color = '#fff';
+	ChangeFooter();
 }
 
 function ShowCV() {
@@ -77,11 +53,41 @@ function ShowCV() {
 	/* show */
 	document.getElementById('ContainerCV').style.display = 'block';
 
+	ChangeFooter();
+}
+
+function ShowProgrammeur() {
+
+	/* hide */
+	document.getElementById('ContainerInfoToekomst').style.display = 'none';
+
+	/* show */
+	document.getElementById('ContainerInfoProgrammeur').style.display = 'block';
+
+	ChangeFooter();
+}
+
+function ShowToekomst() {
+
+	/* hide */
+	document.getElementById('ContainerInfoProgrammeur').style.display = 'none';
+
+	/* show */
+	document.getElementById('ContainerInfoToekomst').style.display = 'block';
+
+	ChangeFooter();
+
+}
+
+function ChangeFooter() {
+
 	/* footer */
-	document.getElementById('Footer').styContainerCVackground = '#fff';
+	document.getElementById('Footer').style.background = '#fff';
 	document.getElementById('Footer').style.color = 'grey';
 
 	/* opdrachten VAK title */
 	document.getElementById('Title').style.background = '#232937';
 	document.getElementById('Title').style.color = '#fff';
+
 }
+
